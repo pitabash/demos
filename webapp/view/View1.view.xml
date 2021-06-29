@@ -1,0 +1,39 @@
+<mvc:View xmlns:form="sap.ui.layout.form"
+    controllerName="demos.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content >
+                        <!-- <form:SimpleForm >
+                            <Label text="Name"></Label>
+                            <Input id="idName"></Input>
+                            <Label text="Password"></Label>
+                            <Input type="Password" id="idPwd"></Input>
+                        </form:SimpleForm>
+                        <Button id="idBtn" text="Press me" press="onPress" ></Button> -->
+
+                        	<form:SimpleForm>
+					
+                                <Label text="Emp No"></Label>
+                                <Input value="{info2>/empStr/empNo}"></Input>
+                                <Label text="Emp Name"></Label>
+                                <Input value="{/empStr/empName}"></Input>
+                                <Label text="Salary"></Label>
+                                <Input  id="idSal"></Input>
+                                <Label text="Currency"></Label>
+                                <Input  id="idCur"></Input>
+                            </form:SimpleForm>
+                            <Button text="Magic" press="onMagic"></Button>
+
+
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
